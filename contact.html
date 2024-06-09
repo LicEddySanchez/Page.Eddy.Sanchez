@@ -14,34 +14,27 @@
   <nav class="navbar navbar-inverse">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a class="navbar-brand" href="#">Eduardo Santos PRO</a>
+        <a class="navbar-brand" href="#">Eddy Sanchez - Abogado y Notario</a>
       </div>
       <ul class="nav navbar-nav">
         <li class="active"><a href="index.html">Inicio</a></li>
         <li><a href="about.html">Sobre mí</a></li>
-        <li><a href="contact.html">Contacto</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Registrar</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Entrar</a></li>
-      </ul>
+       </ul>
     </div>
   </nav>
     <h1><center>Contáctame ahora</center></h1>
       <div class="container">
-        <form action="action_page.php">
-          <label for="fname">Nombre</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
-          <label for="lname">Apellido</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-          <label for="country">Ciudad</label>
-          <select id="country" name="country">
-            <option value="australia">Australia</option>
-            <option value="canada">Canada</option>
-            <option value="usa">USA</option>
-          </select>
+        <iframe name="respuesta" src="https://us-central1-mydomains-344415.cloudfunctions.net/form" width="1px" height="1px" style="border: none;"></iframe>
+        <form name="sentMessage" id="contactForm" action="https://us-central1-mydomains-344415.cloudfunctions.net/form" method="get" target="respuesta">
+          <label for="fname">Nombre:</label>
+          <input type="text" class="form-control" placeholder="Nombre *" id="name" name="name" required>
+          <label for="fname">Correo:</label>
+          <input type="email" class="form-control" placeholder="Su correo *" id="email" name="email" required>
+          <label for="lname">Número de teléfono:</label>
+          <input type="number" class="form-control" placeholder="Número de telefono *" id="phone" name="phone" required>
           <label for="subject">Mensaje</label>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          <textarea class="form-control" placeholder="Su mensaje *" id="message" name="message" required></textarea>
+          <input type="hidden" id="postId" name="postId" value="Eddy" />
           <input type="submit" value="Submit">
         </form>
       </div>
