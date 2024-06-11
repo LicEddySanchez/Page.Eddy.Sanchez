@@ -2,12 +2,13 @@
 <html lang="es" dir="ltr">
 <head>
   <meta charset="utf-8">
-  <title>plantilla pagina web html</title>
+  <title>contacto Eddy Sanchez</title>
   <link rel="stylesheet" type="text/css" href="estilo.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://www.google.com/recaptcha/enterprise.js" async defer></script>
 </head>
 <body>
 
@@ -35,6 +36,7 @@
           <label for="subject">Mensaje</label>
           <textarea class="form-control" placeholder="Su mensaje *" id="message" name="message" required></textarea>
           <input type="hidden" id="postId" name="postId" value="Eddy" />
+          <div class="g-recaptcha" data-sitekey="6LdKd_YpAAAAAFI7pcNz1n-HUJV4AWQ3Khe5IQ6u"></div>
           <input type="submit" value="Submit">
         </form>
       </div>
